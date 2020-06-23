@@ -11,4 +11,5 @@ package com.zd.baselibrary;
  * @since 1.0
  */
 public class BaseView {
+
 }
