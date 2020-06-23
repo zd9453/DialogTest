@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DialogTest</string>
+    <string name="content1">this就是各种各种要对齐是不是this就是各种各种要对齐是不是</string>
+
+    <string name="content"><![CDATA[
+                this就是各种各种要对齐是不是this就是各种各种要对齐是不是
+    ]]></string>
+
+</resources>

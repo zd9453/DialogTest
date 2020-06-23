@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+    <style name="BaseFragmentDialog" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--是否悬浮在窗体上-->
+        <item name="android:windowIsFloating">false</item>
+        <!--dialog出现和消失的动画合集（也可以分解成 出现动画、消失动画 单独设置）-->
+        <item name="android:windowAnimationStyle">@style/dialog_fragment_animation</item>
+        <!--dialog出现动画-->
+        <!--<item name="android:windowEnterAnimation">@anim/dialog_in_bottom</item>-->
+        <!--dialog消失动画-->
+        <!--<item name="android:windowExitAnimation">@anim/dialog_out_bottom</item>-->
+
+        <!--整个dialog的外围边框 如果不在布局中设置背景样式则可以在这里设置dialog的背景样式-->
+        <item name="android:windowFrame">@null</item>
+
+        <!--dialog弹起后区域外的窗体是否变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!--dialog窗体的背景，这里设置成透明，方便在给布局设置的背景显示，主要是各种圆角样式的背景-->
+        <!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="dialog_fragment_animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_bottom</item>
+    </style>
+
+
+    <style name="AudioPlayFragmentDialog" parent="AppTheme">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!--是否悬浮在窗体上-->
+        <item name="android:windowIsFloating">false</item>
+
+        <!--dialog出现和消失的动画合集（也可以分解成 出现动画、消失动画 单独设置）-->
+        <item name="android:windowAnimationStyle">@style/dialog_fragment_animation</item>
+        <!--dialog出现动画-->
+        <!--<item name="android:windowEnterAnimation">@anim/dialog_in_bottom</item>-->
+        <!--dialog消失动画-->
+        <!--<item name="android:windowExitAnimation">@anim/dialog_out_bottom</item>-->
+
+        <!--整个dialog的外围边框 如果不在布局中设置背景样式则可以在这里设置dialog的背景样式-->
+        <item name="android:windowFrame">@null</item>
+
+        <!--dialog弹起后区域外的窗体是否变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!--dialog窗体的背景，这里设置成透明，方便在给布局设置的背景显示，主要是各种圆角样式的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+</resources>
